@@ -14,7 +14,7 @@ class Accounting extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.purple.shade400, Colors.purple.shade600])),
+                  colors: [Colors.purple.shade100, Colors.purple.shade300])),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -154,6 +154,39 @@ class Accounting extends StatelessWidget {
                             fontWeight: FontWeight.bold)),
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
+                GestureDetector(
+                  onTap: () {
+
+                  },
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    margin: const EdgeInsets.symmetric(horizontal: 40),
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 4,
+                              color: Colors.black12.withOpacity(.2),
+                              offset: const Offset(2, 2))
+                        ],
+                        borderRadius: BorderRadius.circular(100)
+                            .copyWith(bottomRight: const Radius.circular(0)),
+                        gradient: LinearGradient(colors: [
+                          Colors.white,
+                          Colors.white
+                        ])),
+                    child: Text('Other Fees',
+                        style: TextStyle(
+                            color: Colors.black.withOpacity(.8),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold)),
+                  ),
+                ),
+
                 const SizedBox(
 
 

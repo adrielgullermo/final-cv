@@ -14,7 +14,7 @@ class Registrar extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.purple.shade400, Colors.purple.shade600])),
+                  colors: [Colors.purple.shade300, Colors.purple.shade200])),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -46,7 +46,7 @@ class Registrar extends StatelessWidget {
                   child: Container(
                     height: 1,
                     width: 0.8,
-                    color: Colors.blue,
+                    color: Colors.pink,
                   ),
                 ),
                 SizedBox(

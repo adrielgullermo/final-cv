@@ -37,7 +37,7 @@ class _StudentPageState extends State<StudentPage> {
   TextEditingController pass = TextEditingController();
 
   Future login() async {
-    var url = Uri.http("192.168.87.108", '/login/student.php', {'q': '{http}'});
+    var url = Uri.http("192.168.87.104", '/login/student.php', {'q': '{http}'});
     var response = await http.post(url, body: {
       "username": user.text,
       "password": pass.text,

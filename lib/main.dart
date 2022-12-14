@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController pass = TextEditingController();
 
   Future login() async {
-    var url = Uri.http("192.168.87.108", '/login/login.php', {'q': '{http}'});
+    var url = Uri.http("192.168.87.118", '/login/login.php', {'q': '{http}'});
     var response = await http.post(url, body: {
       "username": user.text,
       "password": pass.text,
@@ -73,13 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          height: double.infinity,
+        body: Container(height: double.infinity,
           width: double.infinity,
           alignment: Alignment.center,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.purple.shade400, Colors.purple.shade800])),
+                  colors: [Colors.purple.shade100, Colors.purple.shade300])),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -111,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     height: 1,
                     width: 0.8,
-                    color: Colors.blue,
+                    color: Colors.pink,
                   ),
                 ),
                 SizedBox(

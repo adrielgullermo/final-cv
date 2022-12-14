@@ -16,7 +16,7 @@ class Transactions extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.blueAccent.shade400, Colors.lightBlueAccent.shade400])),
+                  colors: [Colors.blueAccent.shade100, Colors.lightBlueAccent.shade200])),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -79,8 +79,8 @@ class Transactions extends StatelessWidget {
                         borderRadius: BorderRadius.circular(100)
                             .copyWith(bottomRight: const Radius.circular(0)),
                         gradient: LinearGradient(colors: [
-                          Colors.green,
-                          Colors.green
+                          Colors.white,
+                          Colors.white
                         ])),
                     child: Text('Accounting',
                         style: TextStyle(
